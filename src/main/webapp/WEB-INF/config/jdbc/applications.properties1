@@ -1,0 +1,5 @@
+spring.datasource.driverClassName=org.mariadb.jdbc.Driver
+spring.datasource.ur=jdbc:mariadb://127.0.0.1:3306/board
+spring.datasource.username=nstech
+spring.datasource.password=1111
+
