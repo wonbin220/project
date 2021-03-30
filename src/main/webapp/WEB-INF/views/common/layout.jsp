@@ -7,7 +7,7 @@
 
 <!-- 공통변수 처리 -->
 <c:set var="CONTEXT_PATH" value="${pageContext.request.contextPath}" scope="application"/>
-<c:set var="RESOURCES_PATH" value="${CONTEXT_PATH}/resources" scope="application"/>
+
 
 <!-- JAVA웹 프로그램에서의 현재 프로젝트 경로를 ContextPath라고 한다. -->
 
@@ -17,9 +17,9 @@
 <meta charset="UTF-8">
 <script type="text/javascript">
 	var CONTEXT_PATH = "${CONTEXT_PATH}";
-	var RESOURCES_PATH = "${RESOURCES_PATH}";
+	
 </script>
-<link rel="stylesheet" href="${RESOURCES_PATH}/resouces/css/common.css">
+<link rel="stylesheet" href="${CONTEXT_PATH}/resouces/css/common.css">
 <title><tiles:insertAttribute name="title" /></title> 
 <!-- tiles_product.xml의 <definition>의 하위 태그인 <put-attribute> 태그의 name이 title인 값(value)를 표시 -->
 </head>

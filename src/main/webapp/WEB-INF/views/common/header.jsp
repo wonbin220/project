@@ -1,7 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <c:set var="contextPath" value="${pageContext.request.contextPath}" />
-<c:set var="RESOURCES_PATH" value="${CONTEXT_PATH}/resources" scope="application"/>
+
 
 <!DOCTYPE html>
 <html>
@@ -17,7 +18,7 @@ var RESOURCES_PATH = "${RESOURCES_PATH}";
  
 	  <div id=companylogo> 
 		<a href="${contextPath}/main.jsp">
-		<img src="${RESOURCES_PATH}/image/logo_sample2.png }" />
+		<img src="${contextPath}/resources/image/logo_sample2.png }" />
 		</a>
 	  </div>
 	            

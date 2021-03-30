@@ -40,6 +40,7 @@
 	</beans:bean>
 	 
 
+	<context:component-scan base-package="com.nstech.*" />
 	<context:component-scan base-package="com.nstech.controller" />
 	<context:component-scan base-package="com.nstech.exception" />
 	<!-- 패키지와 애너테이션을 지정 -->
@@ -58,10 +59,10 @@
 	</mvc:interceptor>
 </mvc:interceptors>
  
- <!-- 
+ 
    <mvc:resources mapping="/resources/**" location="/resources/" />
   <mvc:resources mapping="/webjars/**" location="/webjars/" />
   <mvc:resources mapping="/css/**" location="/css/"/>
   <mvc:resources mapping="/img/**" location="/img/"/>
-  <mvc:resources mapping="/js/**" location="/js/"/> -->
+  <mvc:resources mapping="/js/**" location="/js/"/> 
 </beans:beans>
